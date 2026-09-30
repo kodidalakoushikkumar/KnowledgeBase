@@ -149,3 +149,25 @@ git push
 ```
 
 No need to re-run `git remote add origin`.
+
+
+### Configure Git to store the Credentials
+
+First check whether Git already has a credential helper: `git config --global credential.helper`
+If it returns nothing, you can configure Git to store the credentials.
+#### Store permanently
+
+```
+git config --global credential.helper store
+```
+
+Then do your push once: `git push -u origin main`
+Enter:
+
+```
+Username: kodidalakoushikkumar
+Password: <your Personal Access Token>
+```
+
+Git will save the credential, so future pushes should work without asking: `git push`
+**Important:** `credential.helper store` saves the credential unencrypted in a file under your home directory (`~/.git-credentials`). It's convenient, but not the most secure option.

@@ -2120,13 +2120,13 @@ Here is exactly what that filter means, broken down step-by-step:
     - _Why can't we just write_ _userAccountControl=2__?_ Because an account can have multiple flags turned on at the same time. For example, if an account is disabled (`2`) _and_ its password never expires (`65536`), AD stores the sum `65538`.
     - If you searched for `userAccountControl=2`, you would completely miss this account. The matching rule performs a **bitwise AND**, which extracts only the specific "disabled" switch (bit `2`) to see if it is turned on, regardless of what other switches are active.
 
-|Filter|Finds|
-|---|---|
-|`objectClass=user`|User objects|
-|`objectClass=computer`|Computer objects|
-|`objectClass=group`|Groups|
-|`objectClass=organizationalUnit`|OUs|
-|`objectClass=domain`|Domain object|
+| Filter                           | Finds            |
+| -------------------------------- | ---------------- |
+| `objectClass=user`               | User objects     |
+| `objectClass=computer`           | Computer objects |
+| `objectClass=group`              | Groups           |
+| `objectClass=organizationalUnit` | OUs              |
+| `objectClass=domain`             | Domain object    |
 
 #### Understanding `lockoutTime` & Windows FILETIME
 
@@ -2208,6 +2208,15 @@ dn: CN=John Doe,OU=Users,DC=IMPRESSICO,DC=LOCAL
 changetype: modify
 replace: department
 department: IT Support
+```
+
+For example:
+
+```
+dn: uid=username,ou=users,dc=example,dc=com
+changetype: modify
+replace: userPassword
+userPassword: NewPassword123
 ```
 
 This means: Find John Doe and replace his `department` with `IT Support`.
