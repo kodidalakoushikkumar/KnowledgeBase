@@ -1,4 +1,10 @@
-
+---
+Title:
+Type:
+Topic:
+tags:
+ee: "[[/IMAGES/BUS.png]]"
+---
 # First understand how macOS thinks
 
 Unlike Windows, macOS separates **authentication** from the **local user account**. Imagine three layers:

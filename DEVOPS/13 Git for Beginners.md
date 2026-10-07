@@ -171,3 +171,49 @@ Password: <your Personal Access Token>
 
 Git will save the credential, so future pushes should work without asking: `git push`
 **Important:** `credential.helper store` saves the credential unencrypted in a file under your home directory (`~/.git-credentials`). It's convenient, but not the most secure option.
+
+### Reduce .git size
+
+ .git grows because Git keeps the history of your commits, including older versions of files. You generally should not manually delete files inside .git.  
+  
+There are a few ways to reduce it:  
+#### 1. If you want to keep the Git history  
+  
+First check what's using the space:  
+  
+```
+du -sh .git  
+git count-objects -vH  
+```
+  
+Then run Git's cleanup:   `git gc  `
+For more aggressive cleanup:  `git gc --aggressive --prune=now  `
+This can significantly reduce .git if there are unused objects.  
+
+#### 2. If you want to completely remove old history  
+  
+If you don't care about previous commits and want the repository to start with one fresh commit, you can recreate the Git history:  
+  
+```
+rm -rf .git  
+git init  
+git add .  
+git commit -m "Initial commit"  
+```
+  
+![:warning:](https://a.slack-edge.com/production-standard-emoji-assets/16.0/google-medium/26a0-fe0f.png) This permanently removes the existing local Git history. If the repository is connected to GitHub/GitLab, this also means you'd need to force-update the remote if you want the remote history replaced.  
+
+#### 3. If large files are causing the problem  
+  
+This is very common. For example, if you committed a large .zip, .iso, build folder, database, etc., deleting the file in a later commit doesn't remove it from Git's history.  
+ 
+You can find large objects with:  
+  
+```
+git rev-list --objects --all |  
+git cat-file --batch-check='%(objectname) %(objecttype) %(objectsize) %(rest)' |  
+sort -k3 -n |  
+tail -20  
+```
+  
+Then we can remove those large files from the history safely.  

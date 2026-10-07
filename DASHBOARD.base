@@ -1,0 +1,22 @@
+views:
+  - type: kanban
+    name: KANBAN
+    filters:
+      and:
+        - file.folder != "/"
+    groupBy:
+      property: file.folder
+      direction: ASC
+    groupOrder:
+      - UBUNTU
+      - DEVOPS
+      - IMAGES
+      - REPAIR
+      - Topics
+      - Windows
+    sort:
+      - property: file.name
+        direction: ASC
+    columnWidth: 270
+    imageAspectRatio: 0.5
+    image: note.cover

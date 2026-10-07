@@ -1,0 +1,238 @@
+{
+  "main": {
+    "id": "ab38d5aadc7119fb",
+    "type": "split",
+    "children": [
+      {
+        "id": "2903566b9c6cf83c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3717910940d19cf5",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "DASHBOARD.base",
+                "viewName": "KANBAN"
+              },
+              "icon": "lucide-kanban-square",
+              "title": "DASHBOARD"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fe4d508a2a1e23b0",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd10a7e2dc8b68d2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4abff7ec3215f2de",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "80c703650c4ad293",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "80dcf43b225f6c92",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 277.92578125,
+    "collapsed": true
+  },
+  "right": {
+    "id": "8e4cb95b877b4511",
+    "type": "split",
+    "children": [
+      {
+        "id": "ba1c27938c370f42",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "527ca2c5e6c65261",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2 UBUNTU THINGS.md",
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "93955fa825f4b588",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2 UBUNTU THINGS.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "bde770363b6862e6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "d7ade2464cc38a1a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "c0d3b2f5176314d9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "CRT PROCESS.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 339.63671875,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "3717910940d19cf5",
+  "lastOpenFiles": [
+    "UBUNTU/Fstab.md",
+    "DASHBOARD.base",
+    "UBUNTU/2 UBUNTU THINGS.md",
+    "IMAGES/fstab.png",
+    "IMAGES/sambashare.png",
+    "IMAGES/Gemini_Generated_Image_buj8wtbuj8wtbuj8.png",
+    "IMAGES/Gemini_Generated_Image_7zrrsc7zrrsc7zrr.png",
+    "Impressico.md",
+    "REPAIR/Untitled.md",
+    "Topics/1 MAC Setup for AD.md",
+    "REPAIR",
+    "Topics",
+    "DEVOPS/3 Architectures for DevOps.md",
+    "INBOX",
+    "Windows/4 WINDOWS THINGS.md",
+    "Windows",
+    "HOME.md",
+    "DEVOPS",
+    "UBUNTU",
+    "Topics/CRT PROCESS.md",
+    "Topics/11 Different Things.md",
+    "Topics/99 HOMELAB.md",
+    "DEVOPS/21 k8s simplify.md",
+    "ISO and IMG.md",
+    "DEVOPS/13 Git for Beginners.md",
+    "DEVOPS/23 Github.md",
+    "DEVOPS/21 K8S.md",
+    "How Docker use HOST Kernel.md",
+    "INFRA.md",
+    "openssl.md",
+    "DEVOPS/22 HELM.md",
+    "Untitled git.md",
+    "Untitled 1.md",
+    "29 09 2026.zip",
+    "Basic Intro to Kubernetes INCOMPLETE.md",
+    "Kubernetes INCOMPLETE.md",
+    "REPAIR/14 Symantic Reading.md",
+    "26 09 2026.zip",
+    "22 09 2026.zip",
+    "IMAGES/ISP ARCH.png",
+    "IMAGES/BUS.png",
+    "ChatGPT Image Aug 10, 2026, 12_20_24 PM 2.png",
+    "ChatGPT Image Aug 10, 2026, 12_20_24 PM 1.png"
+  ]
+}
