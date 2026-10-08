@@ -1,3 +1,10 @@
+---
+Title:
+Type:
+Topic:
+tags:
+ee: "[[/IMAGES/BUS.png]]"
+---
 # 1. First forget the old telephone idea
 
 A traditional phone system might look like:

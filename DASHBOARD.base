@@ -4,19 +4,18 @@ views:
     filters:
       and:
         - file.folder != "/"
+        - file.folder != "IMAGES"
     groupBy:
       property: file.folder
       direction: ASC
     groupOrder:
-      - UBUNTU
+      - 1 UBUNTU
       - DEVOPS
-      - IMAGES
-      - REPAIR
-      - Topics
+      - Troubleshoot
       - Windows
-    sort:
-      - property: file.name
-        direction: ASC
+      - Topics
+      - REPAIR
+      - SERVER
+    sort: []
     columnWidth: 270
     imageAspectRatio: 0.5
-    image: note.cover

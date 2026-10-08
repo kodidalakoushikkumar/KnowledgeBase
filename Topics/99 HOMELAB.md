@@ -1,3 +1,10 @@
+---
+Title:
+Type:
+Topic:
+tags:
+ee: "[[/IMAGES/BUS.png]]"
+---
 Pulic IP
 NGINX
 free firewall

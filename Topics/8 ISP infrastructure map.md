@@ -1,4 +1,10 @@
-
+---
+Title:
+Type:
+Topic:
+tags:
+ee: "[[/IMAGES/BUS.png]]"
+---
 ![[ISP ARCH.png]]
 
 

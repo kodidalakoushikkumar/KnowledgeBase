@@ -1,3 +1,10 @@
+---
+Title:
+Type:
+Topic:
+tags:
+ee: "[[/IMAGES/BUS.png]]"
+---
 #  **"I have a model. Now what? How do I actually use it?"**
 
 There are **three common ways** to use a model.

@@ -1,4 +1,10 @@
-
+---
+Title:
+Type:
+Topic:
+tags:
+ee: "[[/IMAGES/BUS.png]]"
+---
 # 1. ICS (Industrial Control Systems)
 
 Imagine a normal office.
