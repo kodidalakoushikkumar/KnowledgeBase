@@ -9,13 +9,14 @@ views:
       property: file.folder
       direction: ASC
     groupOrder:
-      - 1 UBUNTU
       - DEVOPS
       - Troubleshoot
       - Windows
       - Topics
       - REPAIR
       - SERVER
+      - INBOX
+      - UBUNTU
     sort: []
     columnWidth: 270
     imageAspectRatio: 0.5

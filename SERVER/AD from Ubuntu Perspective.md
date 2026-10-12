@@ -323,6 +323,16 @@ replace: lockoutTime
 lockoutTime: 0
 ```
 
+```
+ldapmodify -H ldap://SHAIL.impressico.local -Y GSSAPI -N <<'EOF'
+dn: CN=Kodidala Koushik Kumar,OU=Laptop User's,OU=Team-IT,DC=impressico,DC=local
+changetype: modify
+replace: lockoutTime
+lockoutTime: 0
+
+EOF
+```
+
 That clears the lockout timestamp. **Your account needs appropriate AD permissions.**
 #### 7. Enable a disabled account
 

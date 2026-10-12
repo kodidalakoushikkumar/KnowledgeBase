@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "cf65d66d40c04d91",
+        "id": "ae23b4e0bbd7c6d2",
         "type": "tabs",
         "children": [
           {
-            "id": "ee84dd49afb3ab07",
+            "id": "ebb75c0851fe26b2",
             "type": "leaf",
             "state": {
               "type": "bases",
@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 238.49609375,
-    "collapsed": true
+    "width": 238.49609375
   },
   "right": {
     "id": "8e4cb95b877b4511",
@@ -161,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DASHBOARD.base",
+                "file": "Troubleshoot/Configure Virtual Memory.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -189,8 +188,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "ee84dd49afb3ab07",
+  "active": "ebb75c0851fe26b2",
   "lastOpenFiles": [
+    "SERVER/AD Password Change.md",
+    "SERVER/AD from Ubuntu Perspective.md",
+    "SERVER/AD Realm Config and Kerberos Details.md",
+    "DASHBOARD.base",
+    "Troubleshoot/Configure Virtual Memory.md",
+    "DEVOPS/3 Architectures for DevOps.md",
+    "INBOX/CPU GPU Arch.md",
     "Topics/SSL.md",
     "Topics/Y2K.md",
     "Topics/ARM vs aarch64 vs AMD64 vs x86_64 vs x86.md",
@@ -198,13 +204,12 @@
     "Topics/ISO and IMG.md",
     "Topics/Partner Network.md",
     "Topics/Registers.md",
-    "DASHBOARD.base",
     "Windows/Collect info (Service, Process, Startup).md",
     "Windows/10 Windows Licensing.md",
     "Windows/Partitioning the 32 GB MicroSD Card.md",
     "Windows/Windows Activation Transfer.md",
-    "Windows/RAS.md",
-    "Windows/KDC TGT RADIUS.md",
+    "SERVER/RAS.md",
+    "SERVER/KDC TGT RADIUS.md",
     "Windows/Network Issue.md",
     "Windows/Bitlocker.md",
     "Windows/DNS in AD.md",
@@ -212,12 +217,6 @@
     "Windows/Delete the User Profile in WINDOWS.md",
     "Windows/Windows Hello for Business PIN.md",
     "Windows/GPO.md",
-    "Windows/slmgr.md",
-    "Troubleshoot/Add user to docker group.md",
-    "1 UBUNTU/TAR.md",
-    "1 UBUNTU/Another partitions “inside” root.md",
-    "1 UBUNTU/UBUNTU NETWORK.md",
-    "Troubleshoot/Manually adding a screen resolution.md",
     "Troubleshoot",
     "SERVER",
     "IMAGES/fstab.png",
@@ -234,7 +233,7 @@
     "INBOX",
     "Windows",
     "DEVOPS",
-    "1 UBUNTU",
+    "UBUNTU",
     "29 09 2026.zip",
     "IMAGES/ISP ARCH.png"
   ]

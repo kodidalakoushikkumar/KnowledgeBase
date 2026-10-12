@@ -82,4 +82,16 @@ Valid starting     Expires            Service principal
 - ⏳ Ticket has an expiry time
 - 🎫 You can now use Kerberos-based services
 
+## with admin permission
 
+```
+ldapsearch -H ldap://SHAIL.impressico.local -Y GSSAPI -N -b "DC=impressico,DC=local" "(cn=*Koushik*)" distinguishedName
+```
+
+```
+ldapsearch -H ldap://SHAIL.impressico.local -Y GSSAPI -N -b "DC=impressico,DC=local" "(sAMAccountName=kodidala.kumar)" distinguishedName
+```
+
+```
+ldappasswd -H ldap://SHAIL.impressico.local -Y GSSAPI -N -S "CN=Kodidala Koushik Kumar,OU=Laptop User's,OU=Team-IT,DC=impressico,DC=local"
+```
