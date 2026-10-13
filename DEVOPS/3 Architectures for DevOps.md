@@ -50,7 +50,6 @@ notifications/
 ```
 
 Everything builds together. One deployment. One application. One server (or multiple identical servers).
-
 Example
 
 ```
@@ -92,7 +91,6 @@ Create Docker Image
 ↓
 Deploy complete application
 ```
-
 
 Advantages
 

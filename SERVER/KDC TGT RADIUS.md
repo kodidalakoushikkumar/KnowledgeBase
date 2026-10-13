@@ -1,4 +1,4 @@
-# 1️⃣2️⃣ KDC TGT RADIUS
+# KDC TGT RADIUS
 
 - **Kerberos** is the **authentication protocol/system** that defines how users prove their identity securely on a network.
 - **KDC (Key Distribution Center)** is a **component inside Active Directory** that acts like the “ticket office.” It **issues tickets** needed for authentication.

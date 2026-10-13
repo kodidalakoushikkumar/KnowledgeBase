@@ -8,8 +8,6 @@ GitHub Actions is an **event-driven automation platform** embedded directly insi
 
 Workflows are triggered by repository events—such as code pushes, pull requests, scheduled crons, or external webhooks—and execute a sequence of jobs, where each job runs inside an isolated, fresh virtual machine or container environment.
 
----
-
 ### **2.1 Core Concepts & Architecture**
 
 #### **1. The Five Core Primitives**
@@ -33,8 +31,6 @@ When an event occurs in the repository, the execution lifecycle follows six disc
 5. **Sequential Step Execution**: The runner clones the repository code, downloads required Actions, and executes job steps sequentially.
 6. **Reporting**: Output logs, generated build artefacts, and final exit status codes are sent back to the GitHub UI.
 
----
-
 ### **2.2 Key Terminology**
 
 Understanding these ten fundamental terms is necessary for navigating the platform's advanced features:
@@ -50,21 +46,19 @@ Understanding these ten fundamental terms is necessary for navigating the platfo
 9. **Matrix Strategy**: An automated mechanism that executes a single job across multiple parameter combinations simultaneously (e.g., testing across OS versions or runtime versions).
 10. **OIDC Token**: A short-lived OpenID Connect token used for keyless, secure authentication with external cloud providers.
 
----
-
 ### **2.3 GitHub Actions vs. Alternatives**
 
 GitHub Actions differs from traditional CI/CD engines like Jenkins, GitLab CI, and CircleCI across several technical dimensions:
 
-|Feature|**GitHub Actions**|**Jenkins**|**GitLab CI**|**CircleCI**|
-|:--|:--|:--|:--|:--|
-|**Setup Effort**|**Zero** (built natively into GitHub)|High (requires server management)|Low (built-in)|Low (cloud hosted)|
-|**Configuration**|**YAML-based**|Groovy Pipeline / YAML|YAML-based|YAML-based|
-|**Free Tier Quotas**|**2,000 min/month** (private repos)|Self-hosted infrastructure costs|400 min/month|6,000 min/month|
-|**Ecosystem**|**16,000+ Marketplace Actions**|2,000+ plugins|Moderate built-in features|Orbs library|
-|**OIDC Support**|**Native keyless integration**|Requires external plugin|Native|Native|
-|**Matrix Builds**|**Native**|Parameterized builds|Native|Native|
-|**Self-Hosted**|**Supported**|Supported|Supported|Supported|
+| Feature              | **GitHub Actions**                    | **Jenkins**                       | **GitLab CI**              | **CircleCI**       |
+| :------------------- | :------------------------------------ | :-------------------------------- | :------------------------- | :----------------- |
+| **Setup Effort**     | **Zero** (built natively into GitHub) | High (requires server management) | Low (built-in)             | Low (cloud hosted) |
+| **Configuration**    | **YAML-based**                        | Groovy Pipeline / YAML            | YAML-based                 | YAML-based         |
+| **Free Tier Quotas** | **2,000 min/month** (private repos)   | Self-hosted infrastructure costs  | 400 min/month              | 6,000 min/month    |
+| **Ecosystem**        | **16,000+ Marketplace Actions**       | 2,000+ plugins                    | Moderate built-in features | Orbs library       |
+| **OIDC Support**     | **Native keyless integration**        | Requires external plugin          | Native                     | Native             |
+| **Matrix Builds**    | **Native**                            | Parameterized builds              | Native                     | Native             |
+| **Self-Hosted**      | **Supported**                         | Supported                         | Supported                  | Supported          |
 
 #### **Plan Quotas & Pricing Nuances**
 
@@ -73,10 +67,6 @@ GitHub Actions differs from traditional CI/CD engines like Jenkins, GitLab CI, a
     - **Free Tier**: 2,000 minutes/month.
     - **Pro Tier**: 3,000 minutes/month.
     - **Enterprise Tier**: 50,000 minutes/month.
-
----
-
-🚀 **Next Step**: Would you like to proceed to **Section 3: Getting Started** to walk through setting up your first workflow and analyzing an end-to-end Node.js & AWS ECR CI/CD pipeline example?
 
 ## Section 3
 
@@ -163,8 +153,6 @@ git push origin main
 ```
 
 Once pushed, navigate to your repository on GitHub and click the **Actions** tab. Your workflow run will appear and start executing within seconds.
-
----
 
 ### **3.3 Simple CI/CD Pipeline Example**
 
@@ -362,20 +350,20 @@ curl -X POST \
 
 Below is the full catalog of workflow trigger events:
 
-|Event|Description|
-|:--|:--|
-|**`push`**|Fired when commits or tags are pushed to a branch.|
-|**`pull_request`**|Fired when a pull request is opened, updated, or closed.|
-|**`pull_request_target`**|Similar to `pull_request`, but executes in the context of the base branch and has write access to secrets (use with caution).|
-|**`workflow_dispatch`**|Manual trigger accepting interactive user inputs.|
-|**`schedule`**|Cron-based time trigger.|
-|**`release`**|Fired when a GitHub Release is created, published, or edited.|
-|**`workflow_call`**|Enables a workflow to function as a reusable template called by other workflows.|
-|**`repository_dispatch`**|Webhook-driven API trigger from external systems.|
-|**`workflow_run`**|Triggered upon the completion of another specified workflow.|
-|**`create` / `delete`**|Fired when a git branch or tag is created or deleted.|
-|**`deployment`**|Fired when a GitHub deployment object is created.|
-|**`issue_comment`**|Fired when a comment is added to an issue or pull request.|
+| Event                     | Description                                                                                                                   |
+| :------------------------ | :---------------------------------------------------------------------------------------------------------------------------- |
+| **`push`**                | Fired when commits or tags are pushed to a branch.                                                                            |
+| **`pull_request`**        | Fired when a pull request is opened, updated, or closed.                                                                      |
+| **`pull_request_target`** | Similar to `pull_request`, but executes in the context of the base branch and has write access to secrets (use with caution). |
+| **`workflow_dispatch`**   | Manual trigger accepting interactive user inputs.                                                                             |
+| **`schedule`**            | Cron-based time trigger.                                                                                                      |
+| **`release`**             | Fired when a GitHub Release is created, published, or edited.                                                                 |
+| **`workflow_call`**       | Enables a workflow to function as a reusable template called by other workflows.                                              |
+| **`repository_dispatch`** | Webhook-driven API trigger from external systems.                                                                             |
+| **`workflow_run`**        | Triggered upon the completion of another specified workflow.                                                                  |
+| **`create` / `delete`**   | Fired when a git branch or tag is created or deleted.                                                                         |
+| **`deployment`**          | Fired when a GitHub deployment object is created.                                                                             |
+| **`issue_comment`**       | Fired when a comment is added to an issue or pull request.                                                                    |
 
 ---
 
