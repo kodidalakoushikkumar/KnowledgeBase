@@ -75,9 +75,7 @@ The `Dockerfile` instructs Docker how to build the application container.
 
 ```
 FROM nginx:alpine
-
 COPY website/ /usr/share/nginx/html/
-
 EXPOSE 80
 ```
 
@@ -262,10 +260,10 @@ monolithic-devops-project/
 │   └── workflows/
 │       └── deploy.yml         # CI/CD pipeline
 └── terraform/                 # Infrastructure as Code
-    ├── [suspicious link removed]            # AWS provider setup
-    ├── [suspicious link removed]           # Input variables
-    ├── [suspicious link removed]                # Security Group & EC2 Instance
-    └── [suspicious link removed]             # Outputs (Public IP)
+    ├── [provider.tf]            # AWS provider setup
+    ├── [variables.tf]            # Input variables
+    ├── [main.tf]                # Security Group & EC2 Instance
+    └── [outputs.tf]             # Outputs (Public IP)
 ```
 
 ---
@@ -502,7 +500,3 @@ To ensure no orphan resources are left running in AWS:
 3. **AWS Free Tier Awareness:**
     - **EC2 `t2.micro`:** Covered under 750 free hours/month for the first 12 months.
     - **Best Practice:** Running `terraform destroy` when you are done practicing guarantees you won't accidentally exceed monthly thresholds.
-
----
-
-🎯 Would you like me to help summarize this complete workflow into a final project README or architecture document for your repository?

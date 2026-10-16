@@ -217,3 +217,57 @@ tail -20
 ```
   
 Then we can remove those large files from the history safely.  
+
+### Configure Git to store Multiple Tokens
+#### Option 1: Create a separate token for each repository
+
+##### Step 1: Generate a new token
+
+1. Open [GitHub Tokens (classic)](https://github.com/settings/tokens).
+2. Click Generate new token (classic).
+3. Give it a name, such as `PROJECT-2`.
+4. Set the required expiration.
+5. Select these scopes:
+    - `repo`
+    - `workflow`
+6. Generate the token and copy it.
+
+##### Step 2: Configure Git for the new repository
+
+Go to your project directory: `cd ~/Downloads/"PROJECT 2"`
+Check the remote: `git remote -v`
+Your remote should point to your new repository: `https://github.com/kodidalakoushikkumar/PROJECT-2.git`
+Now push: `git push origin main`
+When Git asks for credentials, enter your GitHub username and the new token as the password.
+
+Important: If Git doesn't prompt you and keeps using the old token, it is probably cached. You need to update or remove the cached credential first.
+
+#### Option 2: Use different tokens automatically for different repositories
+
+If you want Git to use a separate token for each repository without repeatedly changing credentials, you can configure repository-specific credentials.
+
+For example:
+
+- `PROJECT-1` → Token 1
+- `PROJECT-2` → Token 2
+
+Git's credential helpers can store credentials by repository path. Enable path-based credential matching: `git config --global credential.useHttpPath true`
+
+Then push from each repository and enter the corresponding token when prompted. Git can store credentials separately for each repository URL.
+
+
+### View current Git credentials configuration
+
+```
+# Check configured credential helper
+git config --global --get credential.helper
+
+# Check whether credentials are separated by repository path
+git config --global --get credential.useHttpPath
+
+# View all Git configuration
+git config --list --show-origin
+
+# View the remote URL for the current repository
+git remote -v
+```

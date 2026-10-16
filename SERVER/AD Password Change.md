@@ -95,3 +95,11 @@ ldapsearch -H ldap://SHAIL.impressico.local -Y GSSAPI -N -b "DC=impressico,DC=lo
 ```
 ldappasswd -H ldap://SHAIL.impressico.local -Y GSSAPI -N -S "CN=Kodidala Koushik Kumar,OU=Laptop User's,OU=Team-IT,DC=impressico,DC=local"
 ```
+
+
+CN=Madhava Reddy,OU=Laptop User's,OU=Yapstone-Project,DC=impressico,DC=loc
+
+
+```
+ldappasswd -H ldap://SHAIL.impressico.local -Y GSSAPI -N -S "CN=Madhava Reddy,OU=Laptop User's,OU=Yapstone-Project,DC=impressico,DC=loc"
+```
